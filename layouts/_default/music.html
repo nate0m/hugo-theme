@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ "css/music.css" | absURL }}">
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <h1>{{ .Title }}</h1>
+    <section class="grid-container">
+        {{ $sortedAlbums := sort .Params.albums "weight" }}
+        {{ range $album := $sortedAlbums }}
+            <div class="card">
+                <div class="image">
+                    <img src="{{ .image }}" alt="{{ .alt }}">
+                    <div class="text">
+                        {{ if .link }}
+                            <a href="{{ .link }}" target="_blank">{{ .text }}</a>
+                        {{ else }}
+                            {{ .text }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </section>
+</body>
+</html>
+
