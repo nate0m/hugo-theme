@@ -3,11 +3,14 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5;
-  color: white;
+  color: #C1C1C3;
   background-image: url('/img/stars.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+a {
+  color: #FE872F;
 }
 h1 {
   font-size: 1.5em;
@@ -21,26 +24,35 @@ h2 {
 .menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
-  text-decoration: bold;
-  color: purple;
+  font-size: 1.3em;
+  color: #FE872F;
   padding: 5px;
   border-radius: 0px;
 }
 .menu, .article-meta, footer { 
   text-align: center; 
-  color: white;
+  color: #C1C1C3;
 }
-
-.title { 
-  font-size: 3em; 
+.site-title {
+  font-size: 3.3em;
   text-align: center;
-  color: white;
+
+}
+.title { 
+  font-size: 1.8em; 
+  text-align: center;
+  color: #FDB649;
+}
+.date {
+  font-size: 1em;
+  color: #C1C1C3;
+
 }
  
 footer a { text-decoration: none; }
 hr {
   border-style: solid;
-  color: white;
+  color: #C1C1C3;
 }
 
 /* code */
