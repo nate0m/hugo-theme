@@ -11,14 +11,14 @@
 body {
   max-width: 800px;
   margin: auto;
-  padding: 1em;
-  line-height: 1.5;
+  padding: 0.2em;
+  line-height: 1;
   color: #C1C1C3;
   background-image: url('/img/stars.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 a {
   color: #FE872F;
