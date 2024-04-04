@@ -9,14 +9,12 @@
 <ul>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
+  {{ range (where $pages "Section" "=" "post") }}
   <li>
     <span class="date">{{ .Date.Format "01/02/2006" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
 </ul>
-
-<iframe src="https://john.citrons.xyz/embed?ref=natesmind.space" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
 
 {{ partial "footer.html" . }}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="{{ "css/music-notes.css" | absURL }}">
+</head>
+
+<body>
+{{ partial "header.html" . }}
+<section class="grid-container">
+  <div class="sidebar">
+    <div class="album_cover"><img src="{{ .Params.album_cover }}" alt="Album Cover"></div>
+    <h4><span class="title">{{ .Title | markdownify }}</span></h4>
+    <p class="artist_name">By: {{ .Params.artist_name }}</p>
+    <p class="release_date">Released: {{ .Params.release_date }}</p>
+    <p class="genre">Genre: {{ .Params.genre }}</p>
+    <a href="{{ .Params.link }}" target="_blank">Listen</a>
+  </div>
+  <div class="main-content">
+    {{ .Content }}
+  </div>
+</section>
+</body>
+
+{{ partial "footer.html" . }}
+</html>
