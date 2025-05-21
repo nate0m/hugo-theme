@@ -6,6 +6,7 @@
     <div class="site-title">| {{ .Site.Title }} |</div>
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+     <hr/>
   </head>
 
   <body>
@@ -15,5 +16,4 @@
       <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end }}
     </ul>
-    <hr/>
     </nav>
