@@ -1,20 +1,20 @@
 ::selection {
-    background-color: rgba(255, 110, 1, 0.5); /* Set your desired highlight color */
-    color: #C1C1C3; /* Set the text color for the highlighted text */
+    background-color: rgba(145, 199, 177, 0.5); /* Set your desired highlight color */
+    color: #B33951; /* Set the text color for the highlighted text */
 }
 
 /* For older browsers */
 ::-moz-selection {
-    background-color: rgba(255, 110, 1, 0.5);
-    color: #C1C1C3;
+    background-color: rgba(145, 199, 177, 0.5);
+    color: #B33951;
 }
 body {
   max-width: 800px;
   margin: auto;
   padding: 0.2em;
   line-height: 1.5em;
-  color: #C1C1C3;
-  background-color: black;
+  color: #54494B;
+  background-color: f1f7ed;
   # background-image: url('/img/stars.png');
   background-size: cover;
   background-position: center;
@@ -22,11 +22,11 @@ body {
   font-size: 1em;
 }
 a {
-  color: #FE872F;
+  color: #91C7B1;
 }
 a:hover {
-  background-color: rgba(255, 110, 1, 0.5);
-  color: #C1C1C3; 
+  background-color: rgba(145, 199, 177, 0.5);
+  color: #B33951; 
 }
 h1 {
   font-size: 1.5em;
@@ -46,7 +46,7 @@ h2 {
 }
 .menu, .article-meta, footer { 
   text-align: left; 
-  color: #C1C1C3;
+  color: #54494B;
 }
 .site-title {
   font-size: 3.3em;
@@ -60,14 +60,14 @@ h2 {
 }
 .date {
   font-size: 1em;
-  color: #C1C1C3;
+  color: #54494B;
 
 }
  
 footer a { text-decoration: none; }
 hr {
   border-style: solid;
-  color: #C1C1C3;
+  color: #54494B;
 }
 
 /* code */
@@ -97,5 +97,3 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
-
-
