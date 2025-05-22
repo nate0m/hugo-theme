@@ -1,12 +1,12 @@
 ::selection {
     background-color: rgba(145, 199, 177, 0.5); /* Set your desired highlight color */
-    color: #01172F; /* Set the text color for the highlighted text */
+    color: #EB5160; /* Set the text color for the highlighted text */
 }
 
 /* For older browsers */
 ::-moz-selection {
     background-color: rgba(145, 199, 177, 0.5);
-    color: #01172F;
+    color: #EB5160;
 }
 body {
   max-width: 800px;
