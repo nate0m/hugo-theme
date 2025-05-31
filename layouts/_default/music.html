@@ -9,7 +9,7 @@
 
     <h1>{{ .Title }}</h1>
     <section class="grid-container">
-        {{ $sortedAlbums := sort .Params.albums "weight" }}
+        {{ $sortedAlbums := sort .Params.albums "weight" "desc"}}
         {{ range $album := $sortedAlbums }}
             <div class="card">
                 <div class="image">
